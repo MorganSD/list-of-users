@@ -8,7 +8,6 @@ class UserList extends Component{
     constructor(){
         super();
         this.state = {
-            // data : JSON.parse(localStorage.getItem('users')) ,
            data : null
         }
     
@@ -29,23 +28,6 @@ class UserList extends Component{
           } else {
             console.log("local storage");
           }
-        // if(!localStorage.getItem('users')){
-        //     // this.setStorage()
-        //     fetch("https://jsonplaceholder.typicode.com/users")
-        //     .then(response => response.json())
-        //     .then(data =>
-        //       this.setState({
-        //         data
-        //       })
-        //     );
-        //     localStorage.setItem("users", JSON.stringify(this.state.data));
-        // }else{
-
-        //     this.setState({
-        //         data : localStorage.setItem("users", JSON.stringify(this.state.data))
-
-        //     })
-        // }
         
       }
     
