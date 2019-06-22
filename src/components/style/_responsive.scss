@@ -1,0 +1,66 @@
+@media screen and (min-width: 1023px) {
+    .userBox {
+      margin: 0 calc(12.5% - 135px) 50px;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .userBox {
+      margin: 0 calc(16.5% - 135px) 50px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .userBox {
+      margin: 0 calc(25% - 135px) 50px;
+    }
+    .summery {
+      flex-flow: column nowrap !important;
+    }
+    .suumery-info {
+      width: 100% !important;
+      margin-left: 0;
+      margin-top: 50px !important;
+      text-align: center;
+    }
+    .summery > figure {
+      margin-left: calc(50% - 150px);
+    }
+    .suumery-info > span {    
+      margin-left: calc(50% - 100px);
+    }
+    table {
+      overflow-x: scroll;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    header > .wrap > div {
+      display: none;
+    }
+    main > div:nth-last-of-type(1) {
+      /* justify-content: space-evenly; */
+    }
+    .first-nav li:last-child {
+      display: none;
+    }
+    .footer {
+      > div:nth-last-of-type(1) {
+        flex-flow: column nowrap !important;
+        text-align: center;
+      }
+      ul {
+        width: 100%;
+      }
+    }
+    .userBox {
+      margin: 0 calc(50% - 135px) 50px;
+    }
+  }
+  
+  @media screen and (max-width: 325px) {
+    .summery > figure {
+      width: 100% !important;
+      margin-left: 0 !important;
+    }
+  }

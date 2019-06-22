@@ -1,0 +1,99 @@
+.form {
+  width: 100%;
+  min-height: 400px;
+  height: auto;
+  margin-top: 100px;
+  /* border: 1px solid red; */
+  padding: 50px 0;
+  > {
+    h1 {
+      text-transform: capitalize;
+    }
+    p {
+      padding-top: 10px;
+      color: grey;
+    }
+  }
+}
+
+.form-content {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid green; */
+  margin-top: 100px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  .row {
+    width: 100%;
+    margin-bottom: 20px;
+    /* border: 1px solid red; */
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    label {
+      text-transform: capitalize;
+      margin-right: 10px;
+      /* color: rgb(7, 7, 97); */
+      display: block;
+      width: 100%;
+      font-size: 14px;
+      color: dimgrey;
+    }
+    input {
+      outline: none;
+      height: 40px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid rgba(64, 89, 131, 0.664);
+      width: 80%;
+      /* flex-basis: 30%; */
+      padding: 0 5px;
+    }
+    span {
+      display: block;
+      width: 40%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.title {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.buttons > input {
+  width: 150px !important;
+  margin-right: 40px;
+  border: none !important;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  &:nth-of-type(1) {
+    background: #31bccc;
+  }
+  &:nth-of-type(2) {
+    background: darkred;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .form-content .row span {
+    width: 100%;
+    input {
+      width: 100%;
+    }
+  }
+  .buttons > input {
+    margin-right: 0;
+    margin-left: calc(50% - 75px);
+  }
+}
