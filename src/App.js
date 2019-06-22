@@ -12,12 +12,15 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import "./animate.css";
 
 class App extends Component {
+  
   render() {
+  
+  
     return (
       <React.Fragment>
         <Tags />
 
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <HeaderSec />
 
           <Route exact path="/" component={UserList} />
